@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R1NAMI - Браузер Будущего</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans overflow-x-hidden">
+    <custom-navbar></custom-navbar>
+
+    <main class="relative z-10">
+        <!-- Hero Section -->
+        <section class="relative py-20 px-4 sm:px-6 lg:px-8">
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="binary-bg absolute inset-0"></div>
+                <div class="geometric-shapes absolute inset-0"></div>
+            </div>
+            <div class="max-w-7xl mx-auto relative z-10">
+                <div class="text-center">
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 font-mono tracking-tighter">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">R1NAMI</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-10 opacity-90">Лучшее что мы можем дать для вас</p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <a href="#download" class="btn-primary">
+                            Скачать сейчас
+                            <i data-feather="download" class="ml-2"></i>
+                        </a>
+                        <a href="#features" class="btn-secondary">
+                            Узнать больше
+                            <i data-feather="arrow-right" class="ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800 bg-opacity-50 backdrop-blur-lg">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 font-mono">Почему R1NAMI?</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <i data-feather="zap"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Молниеносная скорость</h3>
+                        <p class="text-gray-300">Оптимизированный движок обеспечивает мгновенную загрузку страниц и плавную работу даже на слабых устройствах.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <i data-feather="lock"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Максимальная приватность</h3>
+                        <p class="text-gray-300">Встроенная защита от трекеров, VPN и блокировка рекламы сохраняют ваши данные в безопасности.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <i data-feather="cpu"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Минимальное потребление ресурсов</h3>
+                        <p class="text-gray-300">Использует на 40% меньше оперативной памяти по сравнению с другими браузерами.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <i data-feather="moon"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Истинная темная тема</h3>
+                        <p class="text-gray-300">Адаптивный темный режим, который работает даже на сайтах без поддержки темной темы.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <i data-feather="code"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Встроенные инструменты</h3>
+                        <p class="text-gray-300">Разработчики оценят встроенные инструменты для отладки и анализа производительности.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <i data-feather="heart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Бесплатно и без скрытых платежей</h3>
+                        <p class="text-gray-300">Полностью бесплатный браузер с открытым исходным кодом, без скрытых подписок.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section id="download" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 to-gray-800">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 font-mono">Скачать R1NAMI</h2>
+                
+                <div class="bg-gray-800 bg-opacity-70 rounded-xl p-8 max-w-4xl mx-auto backdrop-blur-md">
+                    <div class="flex flex-col md:flex-row gap-8 items-center">
+                        <div class="md:w-1/2">
+                            <h3 class="text-2xl font-bold mb-4">Доступно для всех платформ</h3>
+                            <p class="text-gray-300 mb-6">Выберите вашу операционную систему и начните работу с R1NAMI уже сегодня.</p>
+                            
+                            <div class="flex flex-wrap gap-3 mb-6">
+                                <button class="platform-btn active" data-platform="windows">
+                                    <i data-feather="windows"></i> Windows
+                                </button>
+                                <button class="platform-btn" data-platform="macos">
+                                    <i data-feather="apple"></i> macOS
+                                </button>
+                                <button class="platform-btn" data-platform="linux">
+                                    <i data-feather="terminal"></i> Linux
+                                </button>
+                            </div>
+                            
+                            <div class="flex items-center text-sm text-gray-400">
+                                <i data-feather="info" class="mr-2"></i>
+                                <span>Версия 1.0.3 | 45.2 MB | Поддержка: Windows 10+, macOS 10.15+, Linux</span>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-1/2 text-center">
+                            <div class="download-card">
+                                <i data-feather="download-cloud" class="text-5xl mb-4"></i>
+                                <h4 class="text-xl font-bold mb-2">R1NAMI для Windows</h4>
+                                <p class="text-gray-300 mb-4">Установщик .exe | Версия 1.0.3</p>
+                                <a href="https://yadi.sk/d/example-link" class="btn-download" target="_blank" rel="noopener noreferrer">
+                                    Скачать с Яндекс.Диска
+                                </a>
+                                <div class="mt-4 flex justify-center gap-4">
+                                    <a href="https://drive.google.com/example-link" class="alternative-link" target="_blank" rel="noopener noreferrer">
+                                        Google Drive
+                                    </a>
+                                    <a href="https://dropbox.com/example-link" class="alternative-link" target="_blank" rel="noopener noreferrer">
+                                        Dropbox
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screenshots Section -->
+        <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 font-mono">Посмотрите R1NAMI в действии</h2>
+                
+                <div class="screenshot-carousel">
+                    <div class="screenshot-item">
+                        <img src="http://static.photos/technology/1024x576/1" alt="R1NAMI интерфейс" class="rounded-xl shadow-2xl">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="http://static.photos/technology/1024x576/2" alt="R1NAMI настройки" class="rounded-xl shadow-2xl">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="http://static.photos/technology/1024x576/3" alt="R1NAMI темная тема" class="rounded-xl shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800 bg-opacity-50">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 font-mono">Что говорят пользователи</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="testimonial-card">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-pink-600 flex items-center justify-center mr-4">
+                                <i data-feather="user" class="text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Алексей В.</h4>
+                                <p class="text-sm text-gray-400">Разработчик</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300">"Перешел с Chrome на R1NAMI и не пожалел. Работает быстрее, потребляет меньше памяти. Встроенные инструменты разработчика - просто огонь!"</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center mr-4">
+                                <i data-feather="user" class="text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Екатерина С.</h4>
+                                <p class="text-sm text-gray-400">Дизайнер</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300">"Обожаю темную тему, которая действительно работает везде. Интерфейс минималистичный и стильный - идеально для творческих людей."</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center mr-4">
+                                <i data-feather="user" class="text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Михаил П.</h4>
+                                <p class="text-sm text-gray-400">Студент</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300">"Использую на старом ноутбуке - летает! Больше нет проблем с вкладками, которые тормозят всю систему. Спасибо за отличный продукт!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
